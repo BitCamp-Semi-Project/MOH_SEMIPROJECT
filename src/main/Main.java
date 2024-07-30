@@ -1,11 +1,13 @@
 package main;
 
-import lombok.Getter;
+import user.UsersService;
+import user.UsersServiceImpl;
 
-@Getter
 public class Main {
-    public static void main(String[] args) {
-        System.out.println("hello");
 
+    public static void main(String[] args) {
+        UsersService userService = new UsersServiceImpl();
+        MainServiceImpl mainService = new MainServiceImpl(userService);
+        mainService.execute();
     }
 }
