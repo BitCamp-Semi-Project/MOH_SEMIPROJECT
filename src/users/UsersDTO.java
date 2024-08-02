@@ -3,6 +3,7 @@ package users;
 
 import lombok.*;
 
+@Setter
 @Getter
 @AllArgsConstructor
 public class UsersDTO {

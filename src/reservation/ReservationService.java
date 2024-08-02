@@ -7,10 +7,11 @@ public interface ReservationService {
 
     public void selectShowTime();
 
-    public void insertPeopleNumber();
+    public boolean insertPeopleNumber(String userId);
 
-    public void selectSeats();
+    public void selectSeats(String userId);
 
     public void calCharge();
-    public void cancelReservation(int reservationId);
+
+    public void executeReservation(String userId);
 }
