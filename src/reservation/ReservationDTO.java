@@ -2,7 +2,6 @@ package reservation;
 
 import lombok.Data;
 
-import java.util.Date;
 
 public class ReservationDTO {
 
@@ -13,4 +12,8 @@ public class ReservationDTO {
         private String time;
     }
 
+    @Data
+    public static class selectSeatDTO {
+        private String user_id;
+    }
 }
